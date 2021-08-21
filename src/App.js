@@ -2,13 +2,10 @@
 import "./global/styles/main.scss";
 
 // Import Primary Nav Styles
-import "./global/styles/menu.css"
-
-// Import CSS for top Nav
-import "./global/styles/navStyle.css";
+import "./global/styles/menu.scss";
 
 // Import CSS for fixed footer
-// import "./components/Footer/footer.scss";
+import "./components/Footer/footerStyle.scss";
 
 // Get the Live Clock Comp
 import Clock from "./components/Clock/liveClock";
@@ -21,6 +18,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 //  UseState to allow JS Custon Function for Sidebar Collapse
 import { useState } from "react";
+
+// Import Boxicons
+import "boxicons";
+
 
 // Main Application
 function App() {
@@ -36,6 +37,7 @@ function App() {
           }}
         />
 
+
         <div className={`container ${inactive ? "inactive" : ""}`}>
           {/* improvememt, not recorded in video, its just looping through menuItems
           instead of hard coding all the routes */}
@@ -43,41 +45,30 @@ function App() {
             <>
 
 
-              <Route key={menu.name} exact={menu.exact} path={menu.to}>
-              <div className="topnav">
-                <h2>
-                  <a href="/">{menu.name}</a>
-                </h2>
-                
-                <div className="topnav-right">
-                  <a href="#search">Search</a>
-                  <a href="#about">About</a>
-                </div>
-              </div>
 
+              <Route key={menu.name} exact={menu.exact} path={menu.to} component={menu.component} >
 
-              <h1>{menu.exact}</h1>
-              <h3>Welcome</h3>
+              </Route>
 
               <div className="footer">
 
-                <p className="footer-left">
-                  Connected
-                </p>
+                {/* Centered Link */}
+                <div className="footer-centered">
+                  <p style={{color: "grey"}}><Clock /></p>
+                </div>
 
-                <p className="footer-center">
-                  <Clock />
+                {/* Left Aligned Links (Default) */}
+                <p style={{color: "grey"}}>
+                  <box-icon name='circle' type='solid' color="green" size="xs"></box-icon> Connected
                 </p>
-
-                <p className="footer-right">
-                  right
-                </p>
-
                 
 
-              </div>
+                {/* Right Aligned Items */}
+                <div className="footer-right footer-connect">
+                  <p style={{color: "grey"}}>V2.1</p>
+                </div>
 
-              </Route>
+              </div>
               
             </>
           ))}

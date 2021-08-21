@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const Clock = () => {
     let time = new Date().toLocaleTimeString();
+    var zone = new Date().toLocaleTimeString('en-us',{timeZoneName:'short'})
     
     const [Ctime, setCtime] = useState(time);
     const updateTime = () => {
@@ -13,7 +14,7 @@ const Clock = () => {
 
     return (
         <>
-            <h4>{time}</h4>
+            <h4> {zone}</h4>
         </>
     );
 }

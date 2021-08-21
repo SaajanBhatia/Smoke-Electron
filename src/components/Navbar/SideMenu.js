@@ -5,7 +5,11 @@ import user from "../../global/images/man.png";
 
 import MenuItem from "./MenuItem";
  
- 
+// import Boxicons 
+import 'boxicons';
+
+// Components Here
+import Tasks from "../Tasks/Tasks";
 
 // All Flight Paths
 export const menuItems = [
@@ -14,12 +18,14 @@ export const menuItems = [
     exact: true,
     to: "/",
     iconClassName: "dashboard",
+    component: Tasks
   },
   {
     name: "Quick Tasks",
     exact: true,
     to: "/quick-tasks",
     iconClassName: "fast-forward-circle",
+    component: Tasks
   },
   {
     name: "Profiles",
@@ -105,9 +111,13 @@ const SideMenu = (props) => {
         </div>
         <div onClick={() => setInactive(!inactive)} className="toggle-menu-btn">
           {inactive ? (
-            <i class="bi bi-arrow-right-square-fill"></i>
+            <i>
+              <box-icon name='right-arrow-square' type='solid' size="sm" color="white"></box-icon>
+            </i>
           ) : (
-            <i class="bi bi-arrow-left-square-fill"></i>
+            <i>
+              <box-icon name='left-arrow-square' type='solid' color="white"></box-icon>
+            </i>
           )}
         </div>
       </div>

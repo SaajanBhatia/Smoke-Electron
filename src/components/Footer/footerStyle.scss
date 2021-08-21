@@ -1,0 +1,42 @@
+/* Color Scheme for Application */
+$footer-color: #212529;
+
+
+/* Add a black background color to the top navigation */
+.footer {
+    position: fixed;
+    background-color: $footer-color;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+/* Style the links inside the navigation bar */
+.footer p {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0.1rem 1rem;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* Centered section inside the top navigation */
+.footer-centered p {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.footer-right {
+    float: right;
+}
+
+.footer-connect{
+    font-weight: 600;
+}
+
+

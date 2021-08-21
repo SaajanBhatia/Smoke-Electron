@@ -1,3 +1,5 @@
+$main-background-color: #212529;
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +12,7 @@ li{
     list-style: none;
 }
 body{
-    background-color: #eee;
+    background-color: $main-background-color;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -38,3 +40,10 @@ body{
     background: #333; 
     display: block;
   }
+
+
+.component_header_1 {
+  color: #F9F6F0;
+  font-weight: 700;
+}
+
