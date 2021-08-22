@@ -4,25 +4,14 @@ import React from "react";
 import "../../global/styles/main.scss";
 
 // Global Style for Table 
-import "../../global/styles/tableStyle.scss";
-
-// Import Modal for Tasks
-import TasksModal from "./TasksModal";
+import "../../global/styles/tableStyle.scss"
 
 
-class Tasks extends React.Component {
+class QuickTasks extends React.Component {
     render() {
       return (
           <div className="app">
-            <h1 className="component_header_1">Tasks</h1>
-
-            <div className="table_taskbar">
-                <h3 className="component_header_3">Overview</h3>
-                <div className="table_taskbar_right">
-                    <TasksModal/>
-                </div>
-                
-            </div>
+            <h1 className="component_header_1">Quick Tasks</h1>
             
             {/* Table */}
 
@@ -95,4 +84,4 @@ class Tasks extends React.Component {
     }
 }
 
-export default Tasks;
+export default QuickTasks;

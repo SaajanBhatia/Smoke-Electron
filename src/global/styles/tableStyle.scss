@@ -1,0 +1,57 @@
+// Global Table Variables
+$table-heading-color: #4287f5;
+$table-cell-color: #394A56;
+$table-font-color: white;
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 0.9375rem;
+    width: 100%;
+    margin-top: 1.25rem;
+  }
+  th {
+    background-color: $table-heading-color;
+    color: $table-font-color;
+  }
+  td {
+    background-color: $table-cell-color; 
+    color: $table-font-color;
+    border-top: 1px solid $table-cell-color;
+    border-bottom: 1px solid $table-cell-color;
+    border-left: 1px solid $table-cell-color;
+    border-right: 1px solid $table-cell-color;
+  }
+  
+  th,td {
+    width: 150px;
+    text-align: left;
+    padding: 5px;
+  }
+  
+  td:nth-child(1), th:nth-child(1) {  
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-left: 2.5rem;
+  }
+  
+  td:last-of-type, th:last-of-type {  
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+.table_taskbar{
+    overflow: hidden;
+    background-color: transparent;
+    padding-top: 0.9375rem;
+}
+
+.table_taskbar h3 {
+    float: left;
+    text-align: center;
+    padding-left: 14px 16px;
+    text-decoration: none;
+}
+ 
+.table_taskbar_right {
+    float: right;
+}

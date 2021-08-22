@@ -10,6 +10,7 @@ import 'boxicons';
 
 // Components Here
 import Tasks from "../Tasks/Tasks";
+import QuickTasks from "../QuickTasks/QuickTasks";
 
 // All Flight Paths
 export const menuItems = [
@@ -25,7 +26,7 @@ export const menuItems = [
     exact: true,
     to: "/quick-tasks",
     iconClassName: "fast-forward-circle",
-    component: Tasks
+    component: QuickTasks
   },
   {
     name: "Profiles",
