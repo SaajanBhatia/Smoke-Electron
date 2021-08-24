@@ -11,6 +11,7 @@ import 'boxicons';
 // Components Here
 import Tasks from "../Tasks/Tasks";
 import QuickTasks from "../QuickTasks/QuickTasks";
+import Profile from "../Profiles/Profile";
 
 // All Flight Paths
 export const menuItems = [
@@ -33,6 +34,7 @@ export const menuItems = [
     exact: true,
     to: "/profiles",
     iconClassName: "user",
+    component: Profile
   },
   {
     name: "Monitor",

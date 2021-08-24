@@ -80,12 +80,12 @@ $button-color: #FD423D;
     right: 30px;
     background: #446CB3;
     color: #fff;
-    width: 50px;
-    border-radius: 2px;
+    width: 100px;
+    border-radius: 15px;
     font-size: 14px;
     height: 32px;
     padding-top: 9px;
-    font-weight: normal;
+    font-weight: bold;
     &:hover { color: #fff; background: #365690; }
   }
   #modal-toggle {
@@ -109,7 +109,7 @@ $button-color: #FD423D;
       background-color: #fff;
       max-width: 400px;
       width: 400px;
-      height: 400px;
+      height: 37.5rem;
       padding: 10px 30px;
       position: fixed;
       left: calc(50% - 200px);
@@ -120,12 +120,9 @@ $button-color: #FD423D;
       cursor: auto;
       visibility: visible;      
       box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);  
-      @media (max-width: 400px) { left: 0; }                   
+      @media (max-width: 400px) { left: 0; };
+      //overflow-y: auto;               
     }  
   }
 };
-
-.use-da-boot{
-    @import "~bootstrap/scss/bootstrap";
-}
 

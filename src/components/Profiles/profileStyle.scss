@@ -1,0 +1,50 @@
+$bubble-background-color: #3D434B;
+$text-color: #F9F6F0;
+$placeholder-text: #F9F6F0;
+
+$text-area-border: #C5C6D0;
+
+.bubble-col{
+    padding: 10px;
+    margin: 1rem;
+    background-color: $bubble-background-color;
+    border-radius: 15px;
+    input, textarea {
+        color: red;
+        background-color:red;
+    }
+}
+
+
+.profile-form-input:valid {
+    background-color: $bubble-background-color!important;
+    border: 1px solid $text-area-border;
+    border-radius: 12px;
+}
+
+.profile-form-input{
+    ::placeholder {
+        color: $placeholder-text!important;
+        opacity: 1;
+    };
+    ::-ms-input-placeholder {
+        color: $placeholder-text;
+    }
+}
+
+.profile-divider{
+    margin: 20px;
+    border-top: 2px solid $text-area-border;
+}
+
+.profile-heading-padding {
+    margin-left: 8px;
+    font-size:x-large;
+}
+
+.profile-table{
+    table {
+        border-collapse: separate;
+    }
+}
+

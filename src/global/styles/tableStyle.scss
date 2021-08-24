@@ -39,6 +39,12 @@ table {
     border-top-right-radius: 10px; 
 }
 
+
+// Hover Effect
+tr:hover{
+    opacity: 85%;
+}
+
 .table_taskbar{
     overflow: hidden;
     background-color: transparent;
@@ -55,3 +61,4 @@ table {
 .table_taskbar_right {
     float: right;
 }
+
