@@ -16,13 +16,16 @@ import Col from 'react-bootstrap/Col';
 
 // Form 
 import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
+
+// Form Submit
+import Button from 'react-bootstrap/Button';
 
 
 class Profile extends React.Component {
     render() {
       return (
           <div className="app">
+
             <h1 className="component_header_1">Profiles</h1>
 
             <div className="use-react-bootstrap">
@@ -31,10 +34,10 @@ class Profile extends React.Component {
                         <Row>
                             <Col className="bubble-col">
                                 <div className="component_header_3 profile-heading-padding">
-                                    Profile Details
+                                    Profile Details 
+                                    
                                 </div>
-
-
+                                
                                 <Row>
                                     <Col >
                                         <br />
@@ -147,6 +150,10 @@ class Profile extends React.Component {
                                 <br />
                                 <br />
 
+                                <Button variant="primary" type="submit" size="lg">
+                                    Add Profile
+                                </Button>
+
 
                             </Col>
 
@@ -159,14 +166,14 @@ class Profile extends React.Component {
                                     <table>
                                         {/* Table Headings */}
                                         <tr>
-                                            <th>Name</th>
+                                            <th className="profile-table-wide">Name</th>
                                             <th>Ending</th>
                                             <th>Action</th>
                                         </tr>
 
                                         {/* Table Body */}
                                         <tr>
-                                            <td>Debit</td>
+                                            <td >Debit</td>
                                             <td>2645</td>
                                             <td>
                                                 <a href="/" alt=""><box-icon name='pencil' type='solid' color="lightgreen"></box-icon></a>
@@ -175,7 +182,7 @@ class Profile extends React.Component {
                                         </tr>
 
                                         <tr>
-                                            <td>Monzo</td>
+                                            <td >Monzo</td>
                                             <td>8646</td>
                                             <td>
                                                 <a href="/" alt=""><box-icon name='pencil' type='solid' color="lightgreen"></box-icon></a>
@@ -186,12 +193,13 @@ class Profile extends React.Component {
                                 </div>
                             </Col>
                         </Row>
-
-                        
                     </Form>
                 </Container>
+
+                
             </div>
             
+
             
 
 

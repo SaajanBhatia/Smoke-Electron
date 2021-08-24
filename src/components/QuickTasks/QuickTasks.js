@@ -6,12 +6,23 @@ import "../../global/styles/main.scss";
 // Global Style for Table 
 import "../../global/styles/tableStyle.scss"
 
+// import Modal 
+import QuickTasksModal from "./QuickTasksModal";
+
 
 class QuickTasks extends React.Component {
     render() {
       return (
           <div className="app">
             <h1 className="component_header_1">Quick Tasks</h1>
+
+            <div className="table_taskbar">
+                <h3 className="component_header_3">Overview</h3>
+                <div className="table_taskbar_right">
+                    <QuickTasksModal/>
+                </div>
+                
+            </div>
             
             {/* Table */}
 

@@ -12,6 +12,8 @@ import 'boxicons';
 import Tasks from "../Tasks/Tasks";
 import QuickTasks from "../QuickTasks/QuickTasks";
 import Profile from "../Profiles/Profile";
+import Proxies from "../Proxies/Proxies";
+import Settings from "../Settings/Settings";
 
 // All Flight Paths
 export const menuItems = [
@@ -41,18 +43,21 @@ export const menuItems = [
     exact: true,
     to: "/monitor",
     iconClassName: "timer",
+    component: ""
   },
   {
     name: "Proxies",
     exact: true,
     to: "/proxies",
     iconClassName: "plane-take-off",
+    component: Proxies,
   },
   {
     name: "Settings",
     exact: true,
     to: "/settings",
     iconClassName: "cog",
+    component: Settings
   },
   
 ];

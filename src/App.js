@@ -65,7 +65,7 @@ function App() {
 
                 {/* Right Aligned Items */}
                 <div className="footer-right footer-connect">
-                  <p style={{color: "grey"}}>V2.1</p>
+                  <p style={{color: "grey"}}>V2.1 B</p>
                 </div>
 
               </div>
