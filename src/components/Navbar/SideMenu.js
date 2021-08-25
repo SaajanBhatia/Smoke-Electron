@@ -14,6 +14,7 @@ import QuickTasks from "../QuickTasks/QuickTasks";
 import Profile from "../Profiles/Profile";
 import Proxies from "../Proxies/Proxies";
 import Settings from "../Settings/Settings";
+import Monitor from "../Monitor/Monitor";
 
 // All Flight Paths
 export const menuItems = [
@@ -43,7 +44,7 @@ export const menuItems = [
     exact: true,
     to: "/monitor",
     iconClassName: "timer",
-    component: ""
+    component: Monitor
   },
   {
     name: "Proxies",
