@@ -9,6 +9,9 @@ import "../../global/styles/tableStyle.scss"
 // import Modal 
 import QuickTasksModal from "./QuickTasksModal";
 
+// Import Start Stop Toggle for Tasks
+import StartToggle from "../Toggle/Toggle";
+
 
 class QuickTasks extends React.Component {
     render() {
@@ -37,7 +40,7 @@ class QuickTasks extends React.Component {
                     <th>Proxy</th>
                     <th>Profile</th>
                     <th>Status</th>
-                    <th>Action</th>
+                    <th>Start</th>
                 </tr>
 
                 {/* Table Body */}
@@ -50,7 +53,7 @@ class QuickTasks extends React.Component {
                     <td>Rainbow</td>
                     <td>Main</td>
                     <td>In Progress</td>
-                    <td>⏸ ⏯</td>
+                    <td><StartToggle /></td>
                 </tr>
 
                 <tr>
@@ -62,7 +65,7 @@ class QuickTasks extends React.Component {
                     <td>Rainbow</td>
                     <td>Main</td>
                     <td>In Progress</td>
-                    <td>⏸ ⏯</td>
+                    <td><StartToggle /></td>
                 </tr>
 
                 <tr>
@@ -74,7 +77,7 @@ class QuickTasks extends React.Component {
                     <td>Rainbow</td>
                     <td>Main</td>
                     <td>In Progress</td>
-                    <td>⏸ ⏯</td>
+                    <td><StartToggle /></td>
                 </tr>
 
                 <tr>
@@ -86,7 +89,7 @@ class QuickTasks extends React.Component {
                     <td>Rainbow</td>
                     <td>Main</td>
                     <td>In Progress</td>
-                    <td>⏸ ⏯</td>
+                    <td><StartToggle /></td>
                 </tr>
             </table>
 

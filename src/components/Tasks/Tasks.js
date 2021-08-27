@@ -9,6 +9,9 @@ import "../../global/styles/tableStyle.scss";
 // Import Modal for Tasks
 import TasksModal from "./TasksModal";
 
+// Import Start Stop Toggle for Tasks
+import StartToggle from "../Toggle/Toggle";
+
 
 class Tasks extends React.Component {
     render() {
@@ -37,12 +40,12 @@ class Tasks extends React.Component {
                     <th>Proxy</th>
                     <th>Profile</th>
                     <th>Status</th>
-                    <th>Action</th>
+                    <th>Start</th>
                 </tr>
 
                 {/* Table Body */}
                 <tr>
-                    <td>1</td>
+                    <td>2</td>
                     <td>Scan</td>
                     <td>RTX 3090</td>
                     <td>REST</td>
@@ -50,11 +53,11 @@ class Tasks extends React.Component {
                     <td>Rainbow</td>
                     <td>Main</td>
                     <td>In Progress</td>
-                    <td>⏸ ⏯</td>
+                    <td><StartToggle name="item2"/></td>
                 </tr>
 
                 <tr>
-                    <td>1</td>
+                    <td>3</td>
                     <td>Scan</td>
                     <td>RTX 3090</td>
                     <td>REST</td>
@@ -62,11 +65,11 @@ class Tasks extends React.Component {
                     <td>Rainbow</td>
                     <td>Main</td>
                     <td>In Progress</td>
-                    <td>⏸ ⏯</td>
+                    <td><StartToggle name="item3"/></td>
                 </tr>
 
                 <tr>
-                    <td>1</td>
+                    <td>4</td>
                     <td>Scan</td>
                     <td>RTX 3090</td>
                     <td>REST</td>
@@ -74,11 +77,11 @@ class Tasks extends React.Component {
                     <td>Rainbow</td>
                     <td>Main</td>
                     <td>In Progress</td>
-                    <td>⏸ ⏯</td>
+                    <td><StartToggle name="item4"/></td>
                 </tr>
 
                 <tr>
-                    <td>1</td>
+                    <td>5</td>
                     <td>Scan</td>
                     <td>RTX 3090</td>
                     <td>REST</td>
@@ -86,7 +89,7 @@ class Tasks extends React.Component {
                     <td>Rainbow</td>
                     <td>Main</td>
                     <td>In Progress</td>
-                    <td>⏸ ⏯</td>
+                    <td><StartToggle name="item5"/></td>
                 </tr>
             </table>
 

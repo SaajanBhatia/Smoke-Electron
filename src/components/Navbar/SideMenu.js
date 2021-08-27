@@ -16,6 +16,7 @@ import Proxies from "../Proxies/Proxies";
 import Settings from "../Settings/Settings";
 import Monitor from "../Monitor/Monitor";
 
+
 // All Flight Paths
 export const menuItems = [
   {
@@ -60,6 +61,7 @@ export const menuItems = [
     iconClassName: "cog",
     component: Settings
   },
+  
   
 ];
 

@@ -23,7 +23,7 @@ function TasksModal() {
 
             <div className="modal-container">
                 <input id="modal-toggle" type="checkbox"></input>
-                <label className="modal-btn" for="modal-toggle">
+                <label className="modal-btn-secondary" for="modal-toggle">
                     <span><h4>Add Task <box-icon name='pencil' type='solid' size="18px" color="white"></box-icon></h4></span>  
                 </label> 
                 
