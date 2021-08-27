@@ -21,6 +21,7 @@ import { useState } from "react";
 
 // Import Boxicons
 import "boxicons";
+import FooterStatus from "./components/Footer/footerStatus";
 
 
 // Main Application
@@ -58,14 +59,12 @@ function App() {
                 </div>
 
                 {/* Left Aligned Links (Default) */}
-                <p style={{color: "grey"}}>
-                  <box-icon name='circle' type='solid' color="green" size="xs"></box-icon> Connected
-                </p>
+                <FooterStatus/>
                 
 
                 {/* Right Aligned Items */}
                 <div className="footer-right footer-connect">
-                  <p style={{color: "grey"}}>V2.1 B</p>
+                  <p style={{color: "grey"}}>V2.1.0</p>
                 </div>
 
               </div>
