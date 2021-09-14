@@ -6,7 +6,6 @@ import { NavLink, Link } from "react-router-dom";
 import 'boxicons';
 //
  
-
 /**
  * @author
  * @function MenuItem

@@ -23,6 +23,8 @@ import { useState } from "react";
 import "boxicons";
 import FooterStatus from "./components/Footer/footerStatus";
 
+// Import Login Modal and Function
+import Login from "./components/Login/Login";
 
 // Main Application
 function App() {
@@ -30,6 +32,9 @@ function App() {
 
   return (
     <div className="App">
+      <Login />
+
+
       <Router>
         <SideMenu
           onCollapse={(inactive) => {
@@ -37,7 +42,6 @@ function App() {
             setInactive(inactive);
           }}
         />
-
 
         <div className={`container ${inactive ? "inactive" : ""}`}>
           {/* improvememt, not recorded in video, its just looping through menuItems
