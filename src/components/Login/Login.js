@@ -7,12 +7,16 @@ import Form from "react-bootstrap/Form";
 import Button from 'react-bootstrap/Button';
 
 function Login() {
-  
+
+
+  // When user loads Smoke for first time, will be prompted to enter key
   if (!("show" in localStorage)) {
     console.log(" > SETTING LOCAL STORAGE")
     localStorage.setItem("show", "true")
   } 
 
+
+  // Set State of showing and hiding Login Modal
   var [show, setShow] = useState(localStorage.getItem("show"));
 
   // Sample Validate Function

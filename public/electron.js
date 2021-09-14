@@ -31,7 +31,10 @@ function createWindow() {
     width: 900, 
     height: 680,
     autoHideMenuBar: true,
-    icon:"./favicon.png"
+    icon:"./favicon.png",
+    webPreferences: {
+      devTools: false 
+      }
   });
 
   mainWindow.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`);
