@@ -134,6 +134,14 @@ const SideMenu = (props) => {
       </div>
       {/* End of Top Sidebar Section */}
 
+      <div className="search-controller">
+        <button className="search-btn">
+          <box-icon name='search-alt-2' color="white"></box-icon>
+        </button>
+
+        <input type="text" placeholder="Search" />
+      </div>
+
       
       {/* Main Side Menu */}
       <div className="main-menu">

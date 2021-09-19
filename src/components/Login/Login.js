@@ -8,7 +8,6 @@ import Button from 'react-bootstrap/Button';
 
 function Login() {
 
-
   // When user loads Smoke for first time, will be prompted to enter key
   if (!("show" in localStorage)) {
     console.log(" > SETTING LOCAL STORAGE")
