@@ -117,7 +117,7 @@ const SideMenu = (props) => {
 
       {/* Top Section of Sidebar */}
       <div className="top-section">
-        <div className="logo">
+        <div className="logo-menu">
           <img src={logo} alt="webscript" />
         </div>
         <div onClick={() => setInactive(!inactive)} className="toggle-menu-btn">
