@@ -21,6 +21,8 @@ import { useState } from "react";
 
 // Import Boxicons
 import "boxicons";
+
+// Import Footer with live status
 import FooterStatus from "./components/Footer/footerStatus";
 
 // Import Login Modal and Function
