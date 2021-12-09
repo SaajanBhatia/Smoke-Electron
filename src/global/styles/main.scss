@@ -60,3 +60,15 @@ body{
 .use-react-bootstrap{
   @import "~bootstrap/scss/bootstrap";
 }
+
+
+/* The multiple select checkbox styling */
+.multiple-select-checkbox{
+  border: 1px solid #CACECC;
+  border-radius: 3.5px;
+  width: 100%;
+  height: 2.4rem;
+  overflow-y: scroll;
+  padding-left: 1rem;
+  padding-top: 5px;
+}

@@ -61,9 +61,18 @@ function QuickTasksModal() {
                                     <Col lg={6}>
                                         <Form.Group controlId="selected_profile">
                                             <Form.Label>Profile</Form.Label>
-                                            <Form.Control as="select" >
-                                                
-                                            </Form.Control>
+                                                {/* Style for multiple-select-checkbox in global/styles/main.scss*/}
+                                                <div className="multiple-select-checkbox">
+                                                    <div>
+                                                        <input type="checkbox" id="profile-1"/> Profile 1
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox" id="profile-2"/> Profile 2
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox" id="profile-3"/> Profile 3
+                                                    </div>
+                                                </div>
                                         </Form.Group>
 
                                     </Col>

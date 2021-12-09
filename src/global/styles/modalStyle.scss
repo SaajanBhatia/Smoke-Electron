@@ -153,12 +153,12 @@ $button-color-secondary: green;
     &:checked ~ .modal-content {
       opacity: 1;
       background-color: #fff;
-      max-width: 400px;
-      width: 400px;
-      height: 37.5rem;
+      max-width: 37.5rem;
+      width: 37.5rem;
+      height: 40rem;
       padding: 10px 30px;
       position: fixed;
-      left: calc(50% - 200px);
+      left: calc(50% - 18.75rem);
       top: 12%;
       border-radius: 4px;
       z-index: 999;
